@@ -29,10 +29,16 @@ namespace ariel
             // Constructors
             OrgChart() : root(nullptr){}
             ~OrgChart() = default;
+            
+            // getters
 
+            //setters
+
+            // methods
             OrgChart& add_root(string){return *this;}
             OrgChart& add_sub(string,string){return *this;}
 
+            // operators
             friend ostream& operator<<(ostream& out,const OrgChart){return out;}
 
             class iterator{
